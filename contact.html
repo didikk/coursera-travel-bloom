@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/8b9b0bd084.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Travel Bloom</title>
+  </head>
+  <body>
+    <header class="flex w-full bg-black h-20 items-center px-4">
+      <a href="index.html" class="text-white italic text-2xl">Travel Bloom</a>
+      <div class="flex-1"></div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="text-white text-lg">Home</a></li>
+          <li><a href="about.html" class="text-white text-lg">About Us</a></li>
+          <li>
+            <a href="contact.html" class="text-white text-lg">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex-1"></div>
+      <div class="w-[30%]"></div>
+    </header>
+    <main class="h-screen bg-[url('assets/background.jpg')] bg-cover flex">
+      <div class="absolute w-full h-full bg-black bg-opacity-5"></div>
+      <div class="flex flex-1 z-10">
+        <div class="flex flex-col justify-center items-center px-8 gap-8">
+          <i class="fa-brands fa-twitter text-white text-[32px]"></i>
+          <i class="fa-brands fa-facebook text-white text-[32px]"></i>
+          <i class="fa-brands fa-instagram text-white text-[32px]"></i>
+          <i class="fa-brands fa-youtube text-white text-[32px]"></i>
+        </div>
+        <div class="mx-20 w-[50%] justify-center gap-12 flex flex-col">
+          <h1 class="text-white text-[60px] font-extrabold uppercase">
+            Contact Us
+          </h1>
+          <p class="text-white text-xl">Get in touch</p>
+        </div>
+        <form
+          class="mx-20 gap-4 flex flex-col w-[50%] h-auto self-center bg-black bg-opacity-25 p-6 rounded-xl"
+        >
+          <label class="text-white">Name</label>
+          <input
+            type="text"
+            class="text-white border border-gray-200 bg-transparent p-2 rounded-xl outline-none"
+          />
+          <label class="text-white">Email</label>
+          <input
+            type="email"
+            class="text-white border border-gray-200 bg-transparent p-2 rounded-xl outline-none"
+          />
+          <label class="text-white">Message</label>
+          <textarea
+            class="text-white border border-gray-200 bg-transparent p-2 rounded-xl outline-none"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-blue-800 rounded-xl h-12 text-white w-full"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

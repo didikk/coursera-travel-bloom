@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/8b9b0bd084.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Travel Bloom</title>
+  </head>
+  <body>
+    <header class="flex w-full bg-black h-20 items-center px-4">
+      <a href="index.html" class="text-white italic text-2xl">Travel Bloom</a>
+      <div class="flex-1"></div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="text-white text-lg">Home</a></li>
+          <li><a href="about.html" class="text-white text-lg">About Us</a></li>
+          <li>
+            <a href="contact.html" class="text-white text-lg">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex-1"></div>
+      <div
+        class="flex w-[30%] h-14 bg-white rounded-full px-5 gap-4 items-center"
+      >
+        <input
+          id="searchBar"
+          class="flex-1 bg-transparent text-teal-600 outline-0 placeholder-inherit"
+          type="text"
+          placeholder="Enter a destination keyword"
+        />
+        <i class="fas fa-search text-teal-500 text-xl"></i>
+        <button
+          id="searchBtn"
+          class="bg-teal-600 text-white px-4 rounded-md h-10"
+        >
+          Search
+        </button>
+        <button
+          id="clearBtn"
+          class="bg-teal-600 text-white px-4 rounded-md h-10"
+        >
+          Clear
+        </button>
+      </div>
+    </header>
+    <main class="h-screen bg-[url('assets/background.jpg')] bg-cover flex">
+      <div class="absolute w-full h-full bg-black bg-opacity-5"></div>
+      <div class="flex flex-1 z-10">
+        <div class="flex flex-col justify-center items-center px-8 gap-8">
+          <i class="fa-brands fa-twitter text-white text-[32px]"></i>
+          <i class="fa-brands fa-facebook text-white text-[32px]"></i>
+          <i class="fa-brands fa-instagram text-white text-[32px]"></i>
+          <i class="fa-brands fa-youtube text-white text-[32px]"></i>
+        </div>
+        <div class="mx-20 w-[400px] justify-center gap-12 flex flex-col">
+          <h1 class="text-white text-[60px] font-extrabold uppercase">
+            Explore Dream Destination
+          </h1>
+          <p class="text-white text-xl">
+            It encourages exploration of unfamiliar places, and it encourages
+            the traveler to try new things. It encourages the traveler to be
+            more adventurous and to take risks.
+          </p>
+          <button
+            class="h-16 bg-white bg-opacity-25 font-bold rounded-lg uppercase w-[200px] text-white"
+          >
+            Book Now
+          </button>
+        </div>
+        <div class="flex-1"></div>
+        <div
+          class="w-[30%] hidden flex-col gap-6 my-6 mr-12 overflow-y-auto"
+          id="resultsContainer"
+        ></div>
+      </div>
+    </main>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
